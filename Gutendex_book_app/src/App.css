@@ -194,7 +194,30 @@ nav a:hover {
     width: calc(33.33% - 20px);
   }
 }
-
+.Category-menu ul {
+  display: flex;
+  list-style: none;
+  gap: 10px;
+  padding: 0;
+}
+.Category-menu ul li a {
+  text-decoration: none;
+  color: white;
+  padding: 5px 10px;
+  border: 1px solid white;
+  border-radius: 4px;
+}
+.Category-menu ul li a:hover {
+  background-color: white;
+  color: #282c34;
+}
+.category-view ul {
+  list-style: none;
+  padding: 0;
+}
+.category-view ul li {
+  margin: 10px 0;
+}
 @media (max-width: 768px) {
   .favorite-list .book-card {
     width: calc(50% - 20px);

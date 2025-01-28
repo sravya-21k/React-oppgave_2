@@ -7,14 +7,15 @@ export default function BookListView() {
   const { books, favorites, setFavorites } = useContext(AppContext);
 
   const handleFavoriteClick = (bookId) => {
-    const updatedFavorites = [...favorites];
+    const updatedFavorites = [...favorites]; //if exits
     if (updatedFavorites.includes(bookId)) {
+      //
       //const index = updatedFavorites.indexOf(bookId);
-      updatedFavorites.splice(updatedFavorites.indexOf(bookId), 1);
+      updatedFavorites.splice(updatedFavorites.indexOf(bookId), 1); //removed from favorites
     } else {
-      updatedFavorites.push(bookId);
+      updatedFavorites.push(bookId); //Added to favorites
     }
-    setFavorites(updatedFavorites);
+    setFavorites(updatedFavorites); // updated and shared usind setfavorites
   };
 
   return (
